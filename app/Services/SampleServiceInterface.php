@@ -36,9 +36,5 @@ interface SampleServiceInterface
      */
     public function delete($id);
 
-    /**
-     * createEntity
-     * @return $entity
-     */
-    public function createEntity();
+    
 }
