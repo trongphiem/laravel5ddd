@@ -87,11 +87,5 @@ class SampleService implements SampleServiceInterface
        
     }
 
-    /**
-     * @return mixed
-     */
-    public function createEntity()
-    {
-       
-    }
+    
 }
