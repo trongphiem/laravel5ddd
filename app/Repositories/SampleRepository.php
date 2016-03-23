@@ -10,7 +10,7 @@ use App\Repositories\SampleInterface;
 
 /**
  * Class SampleRepository
- * @package Keihi\Repositories
+ * @package App\Repositories
  */
 class SampleRepository implements SampleInterface
 {
@@ -88,13 +88,6 @@ class SampleRepository implements SampleInterface
     {
        
     }
-    /**
-     * createEntity
-     * @return mixed
-     */
-    public function createEntity()
-    {
-    		
-    }
+    
 
 }
