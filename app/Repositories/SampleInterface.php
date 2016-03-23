@@ -41,9 +41,5 @@ interface SampleInterface
      * @return mixed
      */
     public function delete($id);
-    /**
-     * createEntity
-     * @return $entity
-     */
-    public function createEntity();
+    
 }
