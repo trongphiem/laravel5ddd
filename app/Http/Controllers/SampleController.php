@@ -33,8 +33,18 @@ class SampleController extends Controller
      */
     public function getIndex()
     {
-       
-        return view('sample.form');
+   	 	$data['list']=$this->sampleService->getList();
+        return view('sample.list',$data);
+    }
+    
+    /**
+     * getIndex
+     * @return \Illuminate\Http\Response
+     */
+    public function getForm()
+    {
+    	 	
+    		return view('sample.form');
     }
 
     /**
@@ -46,7 +56,7 @@ class SampleController extends Controller
     		
     		$return = $this->sampleService->save($request);
     		if(is_object($return)) {
-    			return redirect('sample')->withErrors($return);
+    			return redirect('sample/form')->withErrors($return);
     		}
     		return redirect('sample');
     }

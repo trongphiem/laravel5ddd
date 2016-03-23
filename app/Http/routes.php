@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('sample', 'SampleController@getIndex');
+Route::get('sample/form', 'SampleController@getForm');
 Route::post('sample/save', 'SampleController@getCreate');
 	
 /*

@@ -51,7 +51,7 @@ class SampleService implements SampleServiceInterface
      */
     public function getList()
     {
-       
+   	 	return $this->sampleInterface->getList( );
     }
 
     /**

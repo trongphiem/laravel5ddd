@@ -37,7 +37,16 @@ class SampleRepository implements SampleInterface
      */
     public function getList()
     {
-       
+	    	try
+	    	{
+	    		return  \DB::connection('mysql')
+	    		->table('sample')
+	    		->get();
+	    	}
+	    	catch(PDOException $e)
+	    	{
+	    		throw $e;
+	    	}
     }
 
     /**
@@ -88,6 +97,6 @@ class SampleRepository implements SampleInterface
     {
        
     }
-    
+  
 
 }
